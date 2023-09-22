@@ -1,0 +1,573 @@
+/* ---------- font css part start ----------- */
+@font-face {
+    font-family: mark;
+    src: url(../font/Mark\ Pro.ttf);
+}
+/* ---------- font css part end ----------- */
+/* ---------- basic css part start ----------- */
+*{
+    margin: 0;
+    padding: 0;
+    outline: o;
+    box-sizing: border-box;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+body{
+    font-family: mark;
+}
+html {
+  scroll-behavior: smooth;
+}
+ul,ol{
+    list-style: none;
+}
+.container{
+    width: 1175px;
+    margin: 0 auto;
+}
+::selection{
+    color: #fff;
+    background: #ff9900;
+}
+/* ---------- basic css part end ----------- */
+/* ---------- nav css part start ----------- */
+#nav{
+    width: 100%;
+    padding-top: 20px;
+    position: absolute;
+}
+.nav_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_logo_col {
+    display: flex;
+    gap: 10px;
+}
+.nav_logo_col .logo img{
+    width: 42px;
+    transition: all linear .3s;
+}
+.nav_logo_col .logo img:hover{
+    transform: scale(1.1);
+}
+.logo_text h2{
+    font-size: 20px;
+    font-weight: 700;
+    color: #111418;
+}
+.logo_text h2 span{
+    display: block;
+    font-size: 13.5px;
+    font-weight: 400;
+    color: #5A5F66;
+}
+.nav_social_col{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.nav_social_col i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #EFE7E3;
+    line-height:40px;
+    text-align: center;
+    color: #5A5F66;
+    font-size: 20px;
+    transition: all linear .3s;
+}
+.nav_social_col i:hover{
+    background: #ff9900;
+    color: #fff;
+}
+/* ---------- nav css part end ----------- */
+/* ---------- hero css part start ----------- */
+#hero{
+    background: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.hero_row{
+    padding-top: 120px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    gap: 30px;
+}
+.hero_text_col h2{
+    font-size: 14px;
+    font-weight: 700;
+    color: #5A5F66;
+    margin-bottom: 16px;
+}
+.hero_text_col h1{
+    font-size: 54px;
+    font-weight: 700;
+    color: #111418;
+    margin-bottom: 16px;
+}
+.hero_text_col p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #5A5F66;
+}
+.hero_text_col p span{
+    display: block;
+    margin-top: 15px;
+}
+.hero_button{
+    width: 230px;
+    height: 60px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background: #ff9900;
+    line-height: 60px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+}
+.hero_button::after{
+    content: '';
+    width: 0%;
+    height: 100%;
+    border-radius: 10px;
+    background: #111418;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all linear 0.7s;
+}
+.hero_button:hover::after{
+    width: 100%;
+}
+.hero_image_col img{
+    width: 500px;
+    border-radius: 25px;
+    filter: saturate(1);
+    transition: all linear .5s;
+}
+.hero_image_col img:hover{
+    filter: saturate(0);
+}
+/* ---------- hero css part end ----------- */
+/* ---------- footer css part start ----------- */
+#footer{
+    background: #222;
+    padding: 20px 0px;
+}
+.footer_row{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.footer_text h2{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+}
+.footer_icon i{
+    margin-left: 15px;
+    font-size: 18px;
+    color: #fff;
+    transition: all linear .3s;
+}
+.footer_icon i:hover{
+    color: #ff9900;
+}
+/* ---------- footer css part end ----------- */
+/* ---------- responsive css part start ----------- */
+@media screen and (max-width: 991px) {
+    .container {
+        width: 100%;
+        padding: 0 35px;
+    }
+
+    .hero_row{
+        padding-top: 160px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    
+    }
+    .hero_text_col{
+        text-align: center;
+    }
+    .hero_text_col p{
+        text-align: justify;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .hero_image_col img{
+        width: 100%;
+    }
+    .hero_button{
+        width: 225px;
+        height: 55px;
+        line-height: 55px;
+        font-size: 16px;
+    }
+    .footer_row{
+        display: block;
+        text-align: center;
+    }
+    .footer_text h2{
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 560px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .nav_row{
+        display: block;
+    }
+    .nav_logo_col{
+        justify-content: center;
+    }
+    .nav_social_col{
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 12px;
+    }
+    .nav_social_col i{
+        width: 30px;
+        height: 30px;
+        line-height:30px;
+        font-size: 15px;
+    }
+    .hero_row{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .hero_text_col{
+        display: block;
+    }
+    .footer_text h2{
+        font-size: 13px;
+    }
+    .footer_icon i{
+        font-size: 13px;
+    }
+}
+/* ---------- responsive css part end ----------- */
+/* -----about css part start ----- */
+.hero_button_row {
+    padding-top: 140px;
+}
+
+.hero_button_row ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero_button_row ul li a {
+    width: 150px;
+    height: 50px;
+    background: #ff9900;
+    border-radius: 5px;
+    line-height: 55px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    transition: all linear .3s;
+}
+
+.hero_button_row ul li a:hover {
+    box-shadow: 2px 14px 35px -8px rgba(255, 153, 0, 0.99);
+    letter-spacing: 2px;
+}
+
+.hero_button_row ul li .active {
+    background: #fff;
+    color: #ff9900;
+    border: 1px solid #ff9900;
+}
+
+.about_me_row {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about_me_image img {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.about_text_title h2 {
+    font-size: 30px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.about_text h2 {
+    display: flex;
+    gap: 100px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #5A5F66;
+    margin-top: 20px;
+}
+
+.about_text h2 span {
+    width: 100px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cv_button a {
+    width: 180px;
+    height: 50px;
+    background: #222;
+    border-radius: 5px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    transition: all linear .3s;
+    margin-top: 32px;
+    transition: all linear .5s;
+}
+
+.cv_button a:hover {
+    background: transparent;
+    border: 1px solid #222;
+    color: #222;
+}
+
+@media screen and (max-width: 991px) {
+    .hero_button_row ul {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .hero_button_row ul li a {
+        width: 140px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 14px;
+    }
+
+    .about_me_row {
+        padding: 80px 0px;
+        display: block;
+    }
+
+    .about_me_image img {
+        width: 100%;
+    }
+
+    .about_text_title h2 {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .about_text h2 {
+        gap: 80px;
+        font-size: 14px;
+    }
+
+    .about_text h2 span {
+        width: 80px;
+        font-size: 14px;
+    }
+
+    .cv_button {
+        text-align: center;
+    }
+}
+/* -----about css part end ----- */
+/* -----skills css part start----- */
+.skills_row {
+    padding: 100px 0;
+}
+
+.bar_col {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.skills_name h2 {
+    width: 150px;
+    font-size: 18px;
+    color: #222;
+}
+
+.skills_bar {
+    width: 80%;
+    height: 30px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.skill {
+    background: #5A5F66;
+    height: 30px;
+    text-align: center;
+}
+
+.skill span {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.html {
+    width: 80%;
+}
+
+.css {
+    width: 70%;
+}
+
+.bootstarp {
+    width: 75%;
+}
+
+.js {
+    width: 25%;
+}
+
+.figma {
+    width: 70%;
+}
+
+.photoshop {
+    width: 85%;
+}
+
+@media screen and (max-width: 560px) {
+
+    .bar_col {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .skills_name {
+        margin-bottom: 10px;
+    }
+
+    .skill span {
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
+
+/* -----skills css part start----- */
+/* -----contact start----- */
+.contact_row {
+    padding: 100px 0;
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_icon span i {
+    font-size: 160px;
+    color: #222;
+}
+
+.contact_box h2 {
+    font-size: 30px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.contact_box form input {
+    display: block;
+    width: 350px;
+    height: 40px;
+    margin: 20px 0;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    background: #ecf0f1;
+    border-radius: 20px;
+}
+
+::placeholder {
+    color: #7f8c8d;
+    font-size: 16px;
+}
+
+.text_area {
+    width: 350px;
+    height: 100px;
+    border-radius: 15px;
+    padding: 20px;
+    background: #ecf0f1;
+    border: none;
+    outline: none;
+}
+
+.send_button {
+    margin-top: 30px;
+    display: block;
+    border: none;
+    width: 350px;
+    height: 40px;
+    border-radius: 30px;
+    background: #ff9900;
+    font-size: 18px;
+    color: #fff;
+
+}
+
+@media screen and (max-width: 560px) {
+    .contact_row {
+        padding: 100px 0;
+        display: block;
+        text-align: center;
+    }
+
+    .contact_icon span i {
+        font-size: 130px;
+        color: #222;
+    }
+
+    .contact_box form input {
+        width: 300px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    ::placeholder {
+        font-size: 14px;
+    }
+
+    .text_area {
+        width: 300px;
+    }
+
+    .send_button {
+        width: 300px;
+        height: 40px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+
+/* -----contact end----- */
