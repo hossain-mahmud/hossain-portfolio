@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="website icon" type="png" href="./images/logo.png"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -46,10 +47,10 @@
                 </ul>
             </div>
             <div class="about_me_row">
-                <div class="about_me_image">
+                <div class="about_me_image" data-aos="fade-up"  data-aos-duration="2000">
                     <img src="./images/photo.jpg" alt="About Image">
                 </div>
-                <div class="about_me_text">
+                <div class="about_me_text" data-aos="fade-down"  data-aos-duration="2000">
                     <div class="about_text_title">
                         <h2>About Me.</h2>
                     </div>
@@ -84,5 +85,9 @@
     </div>
 </footer>
     <!-- --------- footer part end -------- -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
