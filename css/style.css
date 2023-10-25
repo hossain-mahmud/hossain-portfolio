@@ -55,13 +55,8 @@ ol {
     align-items: center;
 }
 
-.nav_logo_col {
-    display: flex;
-    gap: 10px;
-}
-
 .nav_logo_col .logo img {
-    width: 42px;
+    width: 140px;
     transition: all linear .3s;
 }
 
@@ -278,11 +273,6 @@ ol {
     .nav_row {
         display: block;
     }
-
-    .nav_logo_col {
-        justify-content: center;
-    }
-
     .nav_social_col {
         justify-content: center;
         margin: 0 auto;
