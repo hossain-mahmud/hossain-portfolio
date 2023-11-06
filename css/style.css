@@ -76,6 +76,10 @@ ol {
     align-items: center;
 }
 
+.logo {
+    text-align: center;
+}
+
 .nav_logo_col .logo img {
     width: 140px;
     transition: all linear .3s;
@@ -110,9 +114,10 @@ ol {
 
 /* ---------- nav css part end ----------- */
 /* ---------- hero css part start ----------- */
-#hero{
+#hero {
     padding-bottom: 20px;
 }
+
 .hero_row {
     padding-top: 120px;
     padding-bottom: 30px;
@@ -142,7 +147,8 @@ ol {
     line-height: 30px;
     color: #f1f2f6;
 }
-.hero_button{
+
+.hero_button {
     width: 230px;
     height: 60px;
     border-radius: 10px;
@@ -157,9 +163,11 @@ ol {
     position: relative;
     z-index: 1;
 }
-.hero_button:hover{
+
+.hero_button:hover {
     color: #111A28;
 }
+
 .hero_button::after {
     content: '';
     width: 0%;
@@ -217,6 +225,7 @@ ol {
 .footer_icon i:hover {
     color: var(--brand_color);
 }
+
 /* ---------- footer css part end ----------- */
 /* ---------- responsive css part start ----------- */
 @media screen and (max-width: 991px) {
@@ -263,7 +272,7 @@ ol {
     }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 574.98px) {
     .container {
         width: 100%;
         padding: 0 15px;
