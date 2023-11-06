@@ -110,6 +110,9 @@ ol {
 
 /* ---------- nav css part end ----------- */
 /* ---------- hero css part start ----------- */
+#hero{
+    padding-bottom: 20px;
+}
 .hero_row {
     padding-top: 120px;
     padding-bottom: 30px;
@@ -136,15 +139,10 @@ ol {
 .hero_text_col p {
     font-size: 18px;
     font-weight: 400;
-    color: #5A5F66;
+    line-height: 30px;
+    color: #f1f2f6;
 }
-
-.hero_text_col p span {
-    display: block;
-    margin-top: 15px;
-}
-
-.hero_button {
+.hero_button{
     width: 230px;
     height: 60px;
     border-radius: 10px;
@@ -159,13 +157,15 @@ ol {
     position: relative;
     z-index: 1;
 }
-
+.hero_button:hover{
+    color: #111A28;
+}
 .hero_button::after {
     content: '';
     width: 0%;
     height: 100%;
     border-radius: 10px;
-    background: #111418;
+    background: #fff;
     position: absolute;
     top: 0;
     left: 0;
@@ -217,7 +217,6 @@ ol {
 .footer_icon i:hover {
     color: var(--brand_color);
 }
-
 /* ---------- footer css part end ----------- */
 /* ---------- responsive css part start ----------- */
 @media screen and (max-width: 991px) {
@@ -354,7 +353,7 @@ ol {
 
 .about_text_title h2 {
     font-size: 30px;
-    color: #222;
+    color: #fff;
     margin-bottom: 20px;
 }
 
@@ -363,7 +362,7 @@ ol {
     gap: 100px;
     font-size: 18px;
     font-weight: 400;
-    color: #5A5F66;
+    color: #f1f2f6;
     margin-top: 20px;
 }
 
@@ -376,7 +375,7 @@ ol {
 .cv_button a {
     width: 180px;
     height: 50px;
-    background: #222;
+    background: var(--brand_color);
     border-radius: 5px;
     line-height: 50px;
     text-align: center;
@@ -391,8 +390,8 @@ ol {
 
 .cv_button a:hover {
     background: transparent;
-    border: 1px solid #222;
-    color: #222;
+    border: 1px solid var(--brand_color);
+    color: #fff;
 }
 
 @media screen and (max-width: 991px) {
@@ -454,18 +453,18 @@ ol {
 .skills_name h2 {
     width: 150px;
     font-size: 18px;
-    color: #222;
+    color: #fff;
 }
 
 .skills_bar {
     width: 80%;
     height: 30px;
-    background: #fff;
+    background: #f1f2f6;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .skill {
-    background: #5A5F66;
+    background: var(--brand_color);
     height: 30px;
     text-align: center;
 }
@@ -527,7 +526,7 @@ ol {
 .projects_title h2 {
     font-size: 30px;
     font-weight: 700;
-    color: #222;
+    color: #fff;
     text-align: center;
     margin-bottom: 16px;
 }
@@ -536,7 +535,7 @@ ol {
     width: 800px;
     font-size: 18px;
     font-weight: 400;
-    color: #222;
+    color: #f1f2f6;
     text-align: center;
     margin: 0 auto;
 }
@@ -559,7 +558,7 @@ ol {
 }
 
 .project_card:hover {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: #00CF5D 0px 3px 8px;
 }
 
 .project_name h2 {
@@ -622,12 +621,12 @@ ol {
 
 .contact_icon span i {
     font-size: 160px;
-    color: #222;
+    color: var(--brand_color);
 }
 
 .contact_box h2 {
     font-size: 30px;
-    color: #222;
+    color: #fff;
     margin-bottom: 20px;
 }
 
