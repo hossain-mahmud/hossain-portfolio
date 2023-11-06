@@ -19,6 +19,7 @@ a {
 }
 
 body {
+    background: #111A28;
     font-family: mark;
 }
 
@@ -38,7 +39,7 @@ ol {
 
 ::selection {
     color: #fff;
-    background: #ff9900;
+    background: #00CF5D;
 }
 
 /* ---------- basic css part end ----------- */
@@ -96,20 +97,12 @@ ol {
 }
 
 .nav_social_col i:hover {
-    background: #ff9900;
+    background: #00CF5D;
     color: #fff;
 }
 
 /* ---------- nav css part end ----------- */
 /* ---------- hero css part start ----------- */
-#hero {
-    background: url(../images/bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-
-}
-
 .hero_row {
     padding-top: 120px;
     padding-bottom: 30px;
@@ -149,7 +142,7 @@ ol {
     height: 60px;
     border-radius: 10px;
     text-transform: uppercase;
-    background: #ff9900;
+    background: #00CF5D;
     line-height: 60px;
     text-align: center;
     font-size: 17px;
@@ -215,7 +208,7 @@ ol {
 }
 
 .footer_icon i:hover {
-    color: #ff9900;
+    color: #00CF5D;
 }
 
 /* ---------- footer css part end ----------- */
@@ -318,7 +311,7 @@ ol {
 .hero_button_row ul li a {
     width: 150px;
     height: 50px;
-    background: #ff9900;
+    background: #00CF5D;
     border-radius: 5px;
     line-height: 55px;
     text-align: center;
@@ -330,14 +323,14 @@ ol {
 }
 
 .hero_button_row ul li a:hover {
-    box-shadow: 2px 14px 35px -8px rgba(255, 153, 0, 0.99);
+    box-shadow: 2px 14px 35px -8px rgba(0, 209, 94, 0.30);
     letter-spacing: 2px;
 }
 
 .hero_button_row ul li .active {
     background: #fff;
-    color: #ff9900;
-    border: 1px solid #ff9900;
+    color: #00CF5D;
+    border: 1px solid #00CF5D;
 }
 
 .about_me_row {
@@ -594,7 +587,7 @@ ol {
 }
 
 .project_link i:hover {
-    color: #ff9900;
+    color: #00CF5D;
     transform: scale(1.3);
 }
 
@@ -664,7 +657,7 @@ ol {
     width: 350px;
     height: 40px;
     border-radius: 30px;
-    background: #ff9900;
+    background: #00CF5D;
     font-size: 18px;
     color: #fff;
 
